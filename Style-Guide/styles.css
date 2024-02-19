@@ -2,6 +2,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 body {
   margin: 2rem 10%;
@@ -11,7 +12,10 @@ body {
   width: 100%;
   padding: 1rem;
   border: 2px solid #727272;
+  margin-bottom: 0.5rem;
 }
+
+/* Colors */
 
 .colors__container {
   width: 100%;
@@ -37,4 +41,46 @@ body {
 #d-green {
   background-color: #4d6357;
   color: #ffffff;
+}
+
+/* Fonts */
+.fonts__container {
+  width: 100%;
+}
+
+.font {
+  width: 48%;
+  display: inline-block;
+  margin: 0.5%;
+}
+
+.title {
+  font-weight: 700;
+}
+.subtitle {
+  font-weight: 500;
+}
+.text {
+  font-weight: 400;
+}
+.quote {
+  font-weight: 300;
+  text-decoration: underline;
+}
+.link {
+  font-weight: 400;
+  font-style: italic;
+}
+.bold {
+  font-weight: 700;
+}
+
+#oswald {
+  font-family: 'Oswald', sans-serif;
+}
+#rubik {
+  font-family: 'Rubik', sans-serif;
+}
+#roboto {
+  font-family: 'Roboto Slab', serif;
 }
