@@ -1,4 +1,4 @@
-html {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -83,4 +83,46 @@ body {
 }
 #roboto {
   font-family: 'Roboto Slab', serif;
+}
+
+/* Text Styles */
+.element {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#main-heading {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+#sub-heading {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+#p-text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+#p-bold {
+  font-size: 16px;
+  font-weight: 900;
+  font-family: 'Rubik', sans-serif;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+#p-quote {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 0.5rem;
 }
