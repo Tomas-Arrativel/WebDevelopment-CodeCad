@@ -12,6 +12,14 @@ body {
 header {
 }
 
+header,
+.banner,
+.about,
+footer {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
 .title {
   margin: auto;
   color: #dc6363;
