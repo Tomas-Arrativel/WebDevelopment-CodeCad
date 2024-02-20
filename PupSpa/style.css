@@ -72,12 +72,15 @@ img {
 }
 
 .address {
+  grid-column: 1 / 3;
 }
 
 .hours {
+  grid-column: 3 / 5;
 }
 
 .call-us {
+  grid-column: 5 / 7;
 }
 
 .icon {
