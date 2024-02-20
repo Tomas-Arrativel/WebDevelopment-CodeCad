@@ -7,9 +7,11 @@ body {
 .grid {
   display: grid;
   grid-template: 100px 8fr 5fr 4fr 5fr 80px / repeat(6, 1fr);
+  gap: 20px;
 }
 
 header {
+  display: grid;
 }
 
 header,
@@ -36,6 +38,7 @@ footer {
   font-size: 3em;
   font-weight: 300;
   letter-spacing: 3.7px;
+  display: grid;
 }
 
 p,
@@ -51,6 +54,7 @@ img {
 
 .about {
   background-color: #f0f0f0;
+  display: grid;
 }
 
 .text {
@@ -69,6 +73,7 @@ img {
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
+  display: grid;
 }
 
 .address {
@@ -95,6 +100,7 @@ img {
   font-size: 18px;
   font-style: italic;
   letter-spacing: 3.7px;
+  display: grid;
 }
 
 .one {
@@ -111,4 +117,5 @@ footer {
   font-family: Poppins;
   font-size: 16px;
   letter-spacing: 0.4px;
+  display: grid;
 }
