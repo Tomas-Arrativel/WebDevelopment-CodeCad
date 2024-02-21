@@ -44,6 +44,7 @@ body {
   width: 1000px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .search-bar {
@@ -84,6 +85,7 @@ input {
   background-color: #ffffff;
   gap: 10px;
   min-height: 700px;
+  display: grid;
 }
 
 .card-column h2 {
