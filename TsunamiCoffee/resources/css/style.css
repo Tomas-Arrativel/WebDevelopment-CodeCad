@@ -91,6 +91,7 @@ li {
 }
 
 .location img {
+  width: 100%;
 }
 
 footer {
@@ -104,4 +105,10 @@ footer .container {
   justify-content: space-between;
   padding: 5em 0;
   color: white;
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    padding-top: 0;
+  }
 }
