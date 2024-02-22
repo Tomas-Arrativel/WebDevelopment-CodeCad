@@ -128,4 +128,8 @@ footer .container {
     margin: 0;
     width: 100%;
   }
+
+  footer nav {
+    display: none;
+  }
 }
