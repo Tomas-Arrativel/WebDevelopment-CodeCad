@@ -57,6 +57,7 @@ li {
 .supporting img {
   height: 10%;
   width: 10%;
+  margin-right: 5%;
 }
 
 .rating {
@@ -70,6 +71,7 @@ li {
 }
 
 .rating h1 {
+  font-size: 2.5rem;
 }
 
 .gallery img {
