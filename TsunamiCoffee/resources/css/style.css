@@ -112,3 +112,9 @@ footer .container {
     padding-top: 0;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .supporting img {
+    display: none;
+  }
+}
