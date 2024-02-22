@@ -123,4 +123,9 @@ footer .container {
   .rating h1 {
     font-size: 2rem;
   }
+
+  .gallery img {
+    margin: 0;
+    width: 100%;
+  }
 }
