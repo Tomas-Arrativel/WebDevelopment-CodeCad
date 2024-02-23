@@ -186,6 +186,14 @@ main {
 }
 /* End of about */
 /* Contact */
+#contact {
+  padding: 5rem;
+  text-align: center;
+}
+
+#contact h3 {
+  font-size: 1.4rem;
+}
 
 /* End of contact*/
 /* Footer */
