@@ -215,3 +215,14 @@ main {
   background-color: #49fafa;
 }
 /* End of joinus */
+
+/* Footer */
+
+footer {
+  text-align: center;
+  background-color: var(--green);
+  padding: 1.2rem;
+  font-size: 1.2rem;
+}
+
+/* End of footer */
