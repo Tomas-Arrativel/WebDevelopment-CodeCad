@@ -5,6 +5,7 @@
   --sky-blue: #34dfe0;
   --green-aqua: #34e0a7;
   --black: #0c2a17;
+  --white: #daffde;
 
   --font: 'Lato', sans-serif;
 }
@@ -23,6 +24,7 @@ html {
 
 /* Navbar */
 nav {
+  position: sticky;
   width: 100%;
   background-color: var(--green);
   padding: 1rem 3rem;
@@ -34,6 +36,7 @@ nav ul {
   align-items: center;
   list-style: none;
   width: 40%;
+  height: 40px;
 }
 
 nav ul li .link {
@@ -54,4 +57,30 @@ nav ul li .link:hover {
 }
 /* End of navbar */
 
-/*  */
+main {
+  background-color: var(--green-aqua);
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+  padding: 2rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 600px) {
+  .banner h1 {
+    font-size: 2.3rem;
+  }
+}
+/* End of banner */
