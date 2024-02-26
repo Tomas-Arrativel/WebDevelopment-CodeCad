@@ -24,7 +24,7 @@ html {
 
 /* Navbar */
 nav {
-  position: sticky;
+  position: fixed;
   width: 100%;
   background-color: var(--green);
   padding: 1rem 3rem;
@@ -67,6 +67,7 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 40vh;
+  padding-top: 40px;
 }
 
 .banner h1 {
@@ -105,20 +106,20 @@ main {
   align-items: center;
 }
 
-.events__container .card {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 30%;
 }
-.events__container .card img {
+.card img {
   width: 100%;
   object-fit: cover;
   margin-bottom: 0.5rem;
 }
 
-.events__container .card h3 {
+.card h3 {
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -134,13 +135,13 @@ main {
     flex-direction: column;
   }
 
-  .events__container .card {
+  .card {
     width: 100%;
   }
-  .events__container .card img {
+  .card img {
     margin: 1.5rem;
   }
-  .events__container .card h3 {
+  .card h3 {
     display: none;
   }
 }
@@ -157,3 +158,35 @@ main {
   font-size: 2.2rem;
 }
 /* End of quote */
+
+/* Workout */
+.workout {
+  padding: 2rem;
+  text-align: center;
+}
+
+.workout h2 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+.workouts__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .workout {
+    padding: 1.5rem 0;
+  }
+  .workout h2 {
+    margin: 0;
+  }
+  .workouts__container {
+    flex-direction: column;
+  }
+}
+
+/* End of workout */
