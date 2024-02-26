@@ -2,7 +2,7 @@
 
 :root {
   --green: #34e06c;
-  --sky-blue: #34dfe0;
+  --sky-blue: #26ebeb;
   --green-aqua: #34e0a7;
   --black: #0c2a17;
   --white: #daffde;
@@ -127,7 +127,9 @@ main {
   .events {
     padding: 1.5rem 0;
   }
-
+  .events h2 {
+    margin: 0;
+  }
   .events__container {
     flex-direction: column;
   }
@@ -143,3 +145,15 @@ main {
   }
 }
 /* End of events */
+
+/* Quote */
+.quote {
+  background-color: var(--sky-blue);
+  padding: 2rem;
+}
+
+.quote h2 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* End of quote */
