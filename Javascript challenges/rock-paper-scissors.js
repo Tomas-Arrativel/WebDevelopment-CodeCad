@@ -11,5 +11,7 @@ const getComputerChoice = () => {
   return options[choice];
 };
 
-getUserChoice('Paper');
-console.log(getComputerChoice());
+const determineWinner = (userChoice, computerChoice) => {
+  console.log(`User: ${userChoice}, Computer: ${computerChoice}`);
+  if (userChoice === computerChoice) return 'The game was a tie';
+};
