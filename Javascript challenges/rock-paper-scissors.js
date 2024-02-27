@@ -12,7 +12,6 @@ const getComputerChoice = () => {
 };
 
 const determineWinner = (userChoice, computerChoice) => {
-  console.log(`User: ${userChoice}, Computer: ${computerChoice}`);
   if (userChoice === computerChoice) return 'The game was a tie';
   if (userChoice === 'rock') {
     if (computerChoice !== 'paper') return 'The user wons';
@@ -26,4 +25,9 @@ const determineWinner = (userChoice, computerChoice) => {
   }
 };
 
-console.log(determineWinner(getUserChoice('Scissors'), getComputerChoice()));
+const playGame = (userChoice, computerChoice) => {
+  console.log(`User: ${userChoice}, Computer: ${computerChoice}`);
+  console.log(determineWinner(userChoice, computerChoice));
+};
+
+playGame(getUserChoice('Rock'), getComputerChoice());
