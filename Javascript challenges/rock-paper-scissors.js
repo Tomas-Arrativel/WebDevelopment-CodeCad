@@ -1,5 +1,3 @@
-console.log('hi');
-
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
   if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors')
@@ -8,15 +6,10 @@ const getUserChoice = (userInput) => {
 };
 
 const getComputerChoice = () => {
+  const options = ['rock', 'paper', 'scissors'];
   const choice = Math.floor(Math.random() * 3);
-  switch (choice) {
-    case 0:
-      return 'rock';
-    case 1:
-      return 'paper';
-    case 2:
-      return 'scissors';
-  }
+  return options[choice];
 };
 
 getUserChoice('Paper');
+console.log(getComputerChoice());
