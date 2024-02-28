@@ -36,4 +36,4 @@ secretMessage.unshift('Programming');
 
 secretMessage.splice(6, 10, 'know');
 
-console.log(secretMessage);
+console.log(secretMessage.join(' '));
