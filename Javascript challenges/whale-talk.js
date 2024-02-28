@@ -1,4 +1,4 @@
-const input = 'one step at a time';
+const input = 'turpentine and turtles';
 const vowels = ['a', 'e', 'i', 'o', 'u'];
 
 let resultArray = [];
@@ -12,4 +12,4 @@ for (let i = 0; i < input.length; i++) {
   }
 }
 
-console.log(resultArray);
+console.log(resultArray.join('').toUpperCase());
