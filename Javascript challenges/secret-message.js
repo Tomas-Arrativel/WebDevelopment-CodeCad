@@ -24,7 +24,9 @@ let secretMessage = [
   'Learn',
   'JavaScript',
 ];
+console.log(secretMessage.length);
 
 secretMessage.pop();
+secretMessage.push('to', 'Program');
 
 console.log(secretMessage);
