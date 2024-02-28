@@ -29,4 +29,6 @@ console.log(secretMessage.length);
 secretMessage.pop();
 secretMessage.push('to', 'Program');
 
+secretMessage[7] = 'right';
+
 console.log(secretMessage);
