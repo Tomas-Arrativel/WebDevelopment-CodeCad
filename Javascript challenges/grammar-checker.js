@@ -17,4 +17,8 @@ storyWords = storyWords.map((word) =>
 
 const badWordIndex = storyWords.findIndex((word) => word === badWord);
 storyWords[badWordIndex] = 'really';
+
+const lengthCheck = storyWords.every((word) => word <= 10);
+console.log(lengthCheck);
+
 // console.log(storyWords.join(' '));
