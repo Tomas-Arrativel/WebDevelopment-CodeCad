@@ -53,4 +53,12 @@ const validateCred = (arr) => {
   return sum % 10 === 0;
 };
 
-console.log(validateCred(invalid3));
+const findInvalidCards = (arr) => {
+  let invalidArrays = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!validateCred(arr[i])) invalidArrays.push(arr[i]);
+  }
+  return invalidArrays;
+};
+
+findInvalidCards(batch);
