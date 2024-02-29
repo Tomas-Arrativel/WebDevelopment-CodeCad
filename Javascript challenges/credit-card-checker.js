@@ -49,7 +49,8 @@ const validateCred = (arr) => {
       else numbersToSum.push(multipliedNum);
     } else numbersToSum.push(arr[i]);
   }
-  console.log(numbersToSum);
+  const sum = numbersToSum.reduce((accum, curr) => accum + curr);
+  return sum % 10 === 0;
 };
 
-validateCred(valid1);
+console.log(validateCred(invalid3));
