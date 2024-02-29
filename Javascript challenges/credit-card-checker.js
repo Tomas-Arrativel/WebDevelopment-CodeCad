@@ -55,10 +55,33 @@ const validateCred = (arr) => {
 
 const findInvalidCards = (arr) => {
   let invalidArrays = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (!validateCred(arr[i])) invalidArrays.push(arr[i]);
-  }
+  arr.forEach((card) => {
+    if (validateCred(card)) return;
+    else invalidArrays.push(card);
+  });
   return invalidArrays;
 };
 
-findInvalidCards(batch);
+const invalidCards = findInvalidCards(batch);
+
+const idInvalidCardCompanies = (invalids) => {
+  let companies = [];
+  invalids.forEach((card) => {
+    if (card[0] === 3 && companies.indexOf('Amex') === -1)
+      companies.push('Amex');
+
+    if (card[0] === 4 && companies.indexOf('Visa') === -1)
+      companies.push('Visa');
+
+    if (card[0] === 5 && companies.indexOf('Mastercard') === -1)
+      companies.push('Mastercard');
+
+    if (card[0] === 6 && companies.indexOf('Discover') === -1)
+      companies.push('Discover');
+  });
+
+  return companies;
+};
+
+const invalidCompanies = idInvalidCardCompanies(invalidCards);
+console.log(invalidCompanies);
