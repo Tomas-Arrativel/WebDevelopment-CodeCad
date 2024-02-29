@@ -6,4 +6,9 @@ let unnecessaryWord = 'literally';
 let misspelledWord = 'beautifull';
 let badWord = 'freaking';
 
-console.log(storyWords.join(' '));
+let count = 0;
+storyWords.forEach((word) => count++);
+
+console.log(count);
+
+// console.log(storyWords.join(' '));
