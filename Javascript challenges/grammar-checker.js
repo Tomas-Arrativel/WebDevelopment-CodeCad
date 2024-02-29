@@ -15,4 +15,6 @@ storyWords = storyWords.map((word) =>
   word === misspelledWord ? 'beautiful' : word,
 );
 
+const badWordIndex = storyWords.findIndex((word) => word === badWord);
+storyWords[badWordIndex] = 'really';
 // console.log(storyWords.join(' '));
