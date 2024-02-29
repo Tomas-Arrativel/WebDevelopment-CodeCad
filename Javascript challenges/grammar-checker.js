@@ -5,3 +5,5 @@ let storyWords = story.split(' ');
 let unnecessaryWord = 'literally';
 let misspelledWord = 'beautifull';
 let badWord = 'freaking';
+
+console.log(storyWords.join(' '));
