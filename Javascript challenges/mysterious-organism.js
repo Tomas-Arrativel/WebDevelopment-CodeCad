@@ -48,8 +48,14 @@ const pAequorFactory = (num, dnasArr) => {
   };
 };
 
-const ex1 = pAequorFactory(1234, ['A', 'C', 'T', 'G', 'G']);
-const ex2 = pAequorFactory(2345, ['C', 'A', 'T', 'T', 'C']);
+let pAequorSurvivals = [];
 
-ex1.willLikelySurvive();
-ex2.willLikelySurvive();
+for (let i = 1; i <= 30; i++) {
+  let survivalDNA = pAequorFactory(i, mockUpStrand());
+  while (!survivalDNA.willLikelySurvive()) {
+    survivalDNA = pAequorFactory(i, mockUpStrand());
+  }
+  pAequorSurvivals.push(survivalDNA);
+}
+
+pAequorSurvivals.forEach((pAequor) => console.log(pAequor.willLikelySurvive()));
