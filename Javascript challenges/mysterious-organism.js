@@ -17,5 +17,15 @@ const pAequorFactory = (num, dnasArr) => {
   return {
     specimenNum: num,
     dna: dnasArr,
+    mutate() {
+      let mutatedDna = this.dna[0];
+      while (mutatedDna === this.dna[0]) {
+        mutatedDna = returnRandBase();
+      }
+      return mutatedDna;
+    },
   };
 };
+
+const prototype = pAequorFactory(4323423, ['A', 'C', 'G', 'G', 'T']);
+prototype.mutate();
