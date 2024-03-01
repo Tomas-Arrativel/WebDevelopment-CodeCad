@@ -24,21 +24,32 @@ const pAequorFactory = (num, dnasArr) => {
       }
       return mutatedDna;
     },
+
     compareDNA(pAequor) {
       let equalEls = 0;
       for (let i = 0; i < this.dna.length; i++) {
         if (this.dna[i] === pAequor.dna[i]) equalEls++;
       }
-
       console.log(
         `specimen #1 and specimen #2 have ${
           (equalEls / this.dna.length) * 100
         }% DNA in common`,
       );
     },
+
+    willLikelySurvive() {
+      let percentaje = 0;
+      this.dna.forEach((el) =>
+        el === 'C' || el === 'G' ? percentaje++ : percentaje,
+      );
+      const finalPercentaje = (percentaje / this.dna.length) * 100;
+      return finalPercentaje >= 60;
+    },
   };
 };
-const ex1 = pAequorFactory(1234, ['A', 'C', 'T', 'G']);
-const ex2 = pAequorFactory(2345, ['C', 'A', 'T', 'T']);
 
-ex1.compareDNA(ex2);
+const ex1 = pAequorFactory(1234, ['A', 'C', 'T', 'G', 'G']);
+const ex2 = pAequorFactory(2345, ['C', 'A', 'T', 'T', 'C']);
+
+ex1.willLikelySurvive();
+ex2.willLikelySurvive();
