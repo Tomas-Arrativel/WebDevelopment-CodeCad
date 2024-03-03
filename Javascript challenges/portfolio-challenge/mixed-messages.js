@@ -20,12 +20,12 @@ let final = [];
 for (let niche in typeOfPhrase) {
   let selectedNum = randomNum(typeOfPhrase[niche].length);
   if (niche === 'motivation')
-    final.push(`You should ${typeOfPhrase[niche][selectedNum]}`);
+    final.push(`- You should ${typeOfPhrase[niche][selectedNum]}`);
   else if (niche === 'signInfo')
-    final.push(`You are like a ${typeOfPhrase[niche][selectedNum]}`);
+    final.push(`- You are like a ${typeOfPhrase[niche][selectedNum]}`);
   else if (niche === 'advice')
-    final.push(`You can try to ${typeOfPhrase[niche][selectedNum]}`);
+    final.push(`- You can try to ${typeOfPhrase[niche][selectedNum]}`);
   else final.push('There is not enough info.');
 }
 
-console.log(final);
+console.log(final.join('\n'));
