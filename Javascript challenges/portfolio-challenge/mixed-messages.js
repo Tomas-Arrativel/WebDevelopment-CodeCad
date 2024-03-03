@@ -10,3 +10,7 @@ const motivation = [
   'stay consistent and dedicated',
   'be proud of every step forward',
 ];
+
+const randomNum = (num) => {
+  return Math.floor(Math.random() * num);
+};
