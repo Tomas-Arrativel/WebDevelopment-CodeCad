@@ -20,6 +20,9 @@ keys.forEach(function (key) {
 });
 
 // Write named functions that change the color of the keys below
+const keyPlay = (e) => {
+  e.target.style.backgroundColor = '#999';
+};
 
 // Write a named function with event handler properties
 
