@@ -74,7 +74,7 @@ nextTwo.addEventListener('click', () => {
   document.getElementById('letter-note-six').innerHTML = 'B';
 });
 // Write anonymous event handler property and function for the third progress button
-nextThree.addEventListener(() => {
+nextThree.addEventListener('click', () => {
   startOver.hidden = false;
   nextThree.hidden = true;
 
@@ -93,6 +93,9 @@ nextThree.addEventListener(() => {
   document.getElementById('letter-note-four').innerHTML = 'C';
   document.getElementById('letter-note-five').innerHTML = 'D';
   document.getElementById('letter-note-six').innerHTML = 'C';
+
+  //Display to none the END word
+  lastLyric.style.display = 'none';
 });
 
 // This is the event handler property and function for the startOver button
