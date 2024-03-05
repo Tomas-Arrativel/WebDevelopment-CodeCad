@@ -21,11 +21,11 @@ keys.forEach(function (key) {
 
 // Write named functions that change the color of the keys below
 const keyPlay = (e) => {
-  e.target.style.backgroundColor = '#999';
+  e.target.style.backgroundColor = '#ccc';
 };
 
 const keyReturn = (e) => {
-  e.target.style.backgroundColor = '#000';
+  e.target.style.backgroundColor = '#fff';
 };
 
 // Write a named function with event handler properties
@@ -52,6 +52,10 @@ nextThree.hidden = true;
 startOver.hidden = true;
 
 // Write anonymous event handler property and function for the first progress button
+nextOne.addEventListener('click', () => {
+  nextTwo.hidden = false;
+  nextOne.hidden = true;
+});
 
 // Write anonymous event handler property and function for the second progress button
 
