@@ -28,7 +28,6 @@ const keyReturn = (e) => {
   e.target.style.backgroundColor = '#000';
 };
 
-document.
 // Write a named function with event handler properties
 const assignEvents = (note) => {
   note.onmousedown = keyPlay;
@@ -36,6 +35,7 @@ const assignEvents = (note) => {
 };
 
 // Write a loop that runs the array elements through the function
+notes.forEach(assignEvents);
 
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
