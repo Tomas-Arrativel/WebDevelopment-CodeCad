@@ -28,8 +28,12 @@ const keyReturn = (e) => {
   e.target.style.backgroundColor = '#000';
 };
 
+document.
 // Write a named function with event handler properties
-const assignEvents = (note) => {};
+const assignEvents = (note) => {
+  note.onmousedown = keyPlay;
+  note.onmouseup = keyReturn;
+};
 
 // Write a loop that runs the array elements through the function
 
