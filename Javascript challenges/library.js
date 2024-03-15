@@ -22,7 +22,7 @@ class Media {
     this._isCheckedOut = !this._isCheckedOut;
   }
   getAverageRating() {
-    this._ratings.reduce((a, b) => a + b, 0);
+    return this._ratings.reduce((a, b) => a + b, 0) / this._ratings.length;
   }
   addRating(rating) {
     this._ratings.push(rating);
@@ -70,3 +70,9 @@ const historyOfEverything = new Book(
 historyOfEverything.toggleCheckOutStatus();
 
 console.log(historyOfEverything.isCheckedOut);
+
+historyOfEverything.addRating(4);
+historyOfEverything.addRating(5);
+historyOfEverything.addRating(5);
+
+console.log(historyOfEverything.getAverageRating());
