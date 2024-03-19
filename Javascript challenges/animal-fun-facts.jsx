@@ -23,10 +23,17 @@ for (const animal in animals) {
   images.push(image);
 }
 
+const displayFact = (e) => {
+  const animal = e.target.alt;
+  const optionIndex = Math.floor(Math.random() * animal.facts.length);
+  const funFact = animal.facts[optionIndex];
+};
+
 const animalFacts = (
   <div>
     <h1>{title === '' ? 'Click an animal for a fun fac' : title}</h1>
     {background}
+    <div className='animals'>{images}</div>
   </div>
 );
 
