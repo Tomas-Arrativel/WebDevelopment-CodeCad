@@ -83,7 +83,9 @@ function Game() {
             <p style={nameStyles}>The computer chose {codeyChoice.name}</p>
           </div>
           <h2 style={resultStyle}>{result}</h2>
-          <button onClick={resetGame}>Play again</button>
+          <button onClick={resetGame} className={styles.button}>
+            Play again
+          </button>
         </div>
       )}
     </div>
