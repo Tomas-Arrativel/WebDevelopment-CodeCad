@@ -6,6 +6,17 @@ const CHOICES = [
   { name: 'scissors', emoji: '✌️' },
 ];
 
+const choiceStyles = {
+  display: 'flex',
+  alignItems: 'center',
+  marginBottom: 40,
+};
+
+const emojiStyle = {
+  fontSize: 64,
+  marginRight: 20,
+};
+
 function Game() {
   const [playerChoice, setPlayerChoice] = useState(null);
   const [codeyChoice, setCodeyChoice] = useState(null);
@@ -36,7 +47,7 @@ function Game() {
 
   return (
     <div>
-      <h1>Rock Paper Scissors</h1>
+      <h1 style={{ fontSize: 48, marginTop: 0 }}>Rock Paper Scissors</h1>
       <div>
         {CHOICES.map((choice) => (
           <button
