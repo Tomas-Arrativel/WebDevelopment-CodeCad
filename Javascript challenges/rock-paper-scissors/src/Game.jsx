@@ -73,15 +73,15 @@ function Game() {
       </div>
       {playerChoice && codeyChoice && (
         <div>
-          <div>
-            <span>{playerChoice.emoji}</span>
-            <p>You chose {playerChoice.name}</p>
+          <div style={choiceStyles}>
+            <span style={emojiStyle}>{playerChoice.emoji}</span>
+            <p style={nameStyles}>You chose {playerChoice.name}</p>
           </div>
-          <div>
-            <span>{codeyChoice.emoji}</span>
-            <p>The computer chose {codeyChoice.name}</p>
+          <div style={choiceStyles}>
+            <span style={emojiStyle}>{codeyChoice.emoji}</span>
+            <p style={nameStyles}>The computer chose {codeyChoice.name}</p>
           </div>
-          <h2>{result}</h2>
+          <h2 style={resultStyle}>{result}</h2>
           <button onClick={resetGame}>Play again</button>
         </div>
       )}
