@@ -23,7 +23,12 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  return <>{/* Replace below and add Router Provider*/}</>;
+  return (
+    <>
+      {/* Replace below and add Router Provider*/}
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
