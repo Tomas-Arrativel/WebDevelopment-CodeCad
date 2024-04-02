@@ -1,19 +1,20 @@
-import React, { useState } from "react";
-import { signUp } from "../features/session/sessionSlice"
-import { useDispatch } from "react-redux";
+import React, { useState } from 'react';
+import { signUp } from '../features/session/sessionSlice';
+import { useDispatch } from 'react-redux';
 // import useNavigate
+import { useNavigate } from 'react-router-dom';
 
-export default function SignUp () {
-  const [username, setUsername] = useState("");
+export default function SignUp() {
+  const [username, setUsername] = useState('');
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-   // Grab the navigate function
-
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(signUp({username: username}));
+    dispatch(signUp({ username: username }));
     // imperatively redirect the user to /profile
-  }
+    navigate('/profile');
+  };
 
   return (
     <section>
@@ -23,11 +24,11 @@ export default function SignUp () {
           Username
           <div>
             <input
-              id="username"
+              id='username'
               value={username}
               onChange={(e) => setUsername(e.currentTarget.value)}
             />
-            <button type="submit" className="primary">
+            <button type='submit' className='primary'>
               Sign Up
             </button>
           </div>
