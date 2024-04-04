@@ -11,7 +11,9 @@ import {
 } from 'react-router-dom';
 
 // create router with JSX Route elements
-const appRouter = createRoutesFromElements(<Route path='/' element={Root} />);
+const appRouter = createBrowserRouter(
+  createRoutesFromElements(<Route path='/' element={Root} />),
+);
 
 function App() {
   return (
