@@ -37,7 +37,9 @@ const Navigation = () => {
                 <NavLink
                   to={`/${type._links.self.href.split('/').pop()}`}
                   key={type.name}
-                  className='nav-link'
+                  className={({ isActive }) =>
+                    `nav-link ${isActive ? 'nav-link-active' : ''}`
+                  }
                 >
                   {type.name}s
                 </NavLink>{' '}
