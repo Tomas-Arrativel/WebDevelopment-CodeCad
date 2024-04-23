@@ -20,7 +20,7 @@ export const ContactsPage = ({ contacts, setContacts }) => {
     Add contact info and clear data
     if the contact name is not a duplicate
     */
-    if (!isEqual) {
+    if (!isEqual && name && phone && email) {
       setContacts({ name, phone, email });
 
       setName('');
