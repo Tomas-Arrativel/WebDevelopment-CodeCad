@@ -36,15 +36,18 @@ function App() {
         <Route
           path={ROUTES.CONTACTS}
           element={
-            <ContactsPage
-              contacts={contacts}
-              setContacts={addContactsData}
-            /> /* Add props to ContactsPage */
+            <ContactsPage contacts={contacts} setContacts={addContactsData} />
           }
         />
         <Route
           path={ROUTES.APPOINTMENTS}
-          element={<AppointmentsPage /> /* Add props to AppointmentsPage */}
+          element={
+            <AppointmentsPage
+              appointments={appointments}
+              setAppointments={addAppointmentsData}
+              contacts={contacts}
+            />
+          }
         />
       </Route>,
     ),
