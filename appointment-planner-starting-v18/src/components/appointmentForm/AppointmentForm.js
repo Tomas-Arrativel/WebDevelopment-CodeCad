@@ -35,8 +35,9 @@ export const AppointmentForm = ({
       <input type='time' value={time} onChange={timeOnChange} />
       <ContactPicker
         contacts={contacts}
-        onChange={contactOnChange}
+        handleOnChange={contactOnChange}
         value={contact}
+        name={title}
       />
       <input type='submit' value='Send' />
     </form>
